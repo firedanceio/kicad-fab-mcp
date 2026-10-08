@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.firedanceio/kicad-fab-mcp",
+  "title": "KiCad Fab",
+  "description": "Check a KiCad board is ready to order (DRC, BOM, LCSC stock and price) and write JLCPCB files.",
+  "repository": {
+    "url": "https://github.com/firedanceio/kicad-fab-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://firedance.io/open-source/kicad-fab-mcp/",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "kicad-fab-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KICAD_CLI",
+          "description": "Path to kicad-cli if it isn't on PATH or in the macOS KiCad app",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

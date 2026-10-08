@@ -1,5 +1,7 @@
 # kicad-fab-mcp
 
+<!-- mcp-name: io.github.firedanceio/kicad-fab-mcp -->
+
 Ask your AI assistant whether a KiCad board is ready to order, and get the files to upload.
 
 > "Review `pcb/main.kicad_pcb` with `bom/parts.csv` for 10 boards."
