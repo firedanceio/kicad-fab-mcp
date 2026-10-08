@@ -1,0 +1,1 @@
+{"violations":[{"type":"clearance","severity":"error","items":[{"description":"Track [GND] on F.Cu"},{"description":"Pad 1 of U1"}]},{"type":"silk_overlap","severity":"warning","items":[{"description":"Silk"}]}],"unconnected_items":[{"items":[{"description":"Pad 2 of R1"},{"description":"Pad 1 of C1"}]}]}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kicad-fab-mcp"
+version = "0.1.0"
+description = "MCP server that lets an AI assistant check whether a KiCad board is ready to order: DRC, BOM vs board, live LCSC stock and cost, JLCPCB order files."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "Firedance" }]
+keywords = ["mcp", "mcp-server", "kicad", "pcb", "jlcpcb", "lcsc", "ai"]
+dependencies = [
+  "mcp>=2.3,<3",
+  "kicad-fab-tools @ git+https://github.com/firedanceio/kicad-fab-tools@0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/firedanceio/kicad-fab-mcp"
+
+[project.scripts]
+kicad-fab-mcp = "kicad_fab_mcp.server:main"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

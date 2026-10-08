@@ -1,0 +1,6 @@
+Designators,Manufacturer,MPN,Footprint,LCSC,Assemble
+R1 R2 R10,Example Co,RES-10K-0402,R_0402_1005Metric,C0000001,yes
+C1,Example Co,CAP-1U-0402,C_0402_1005Metric,C0000002,yes
+U1,Example Co,IC-EXAMPLE,SOT-23,C0000003,yes
+J1,Example Co,CONN-EXAMPLE,MyConnector,C0000004,yes
+TP1,,,TestPoint,,no
