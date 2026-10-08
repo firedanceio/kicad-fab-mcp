@@ -5,7 +5,7 @@ Ask your AI assistant whether a KiCad board is ready to order, and get the files
 > "Review `pcb/main.kicad_pcb` with `bom/parts.csv` for 10 boards."
 >
 > Not ready: 4 DRC errors (hole clearance on the mounting holes). BOM matches the board. Every
-> parts in stock. 32 footprints have no JLCPCB rotation fix yet; check them in the placement viewer.
+> part is in stock. 32 footprints have no JLCPCB rotation fix yet; check them in the placement viewer.
 
 An MCP server built on [kicad-fab-tools](https://github.com/firedanceio/kicad-fab-tools). Other
 KiCad MCP servers help you design and export; this one is the checklist before you pay for an
