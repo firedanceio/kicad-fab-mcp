@@ -1,9 +1,19 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  # Run by hand from Actions > CI > Run workflow, e.g. right after this repo goes public.
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run even while this repo is private (needs kicad-fab-tools to be public)"
+        type: boolean
+        default: false
 jobs:
   test:
-    # kicad-fab-tools is installed from GitHub, so this runs once the repos are public.
-    if: ${{ !github.event.repository.private }}
+    # kicad-fab-tools is installed from GitHub, so this runs once the repos are public. A manual
+    # run with "force" ticked skips the check, for testing once kicad-fab-tools alone is public.
+    if: ${{ !github.event.repository.private || inputs.force }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
