@@ -63,4 +63,4 @@ The BOM format and rotation-fixes file are documented in
 
 ## Licence
 
-Apache-2.0. Made by [Firedance](https://firedance.io).
+Apache-2.0. Made by [Firedance](https://www.getfiredance.com).
